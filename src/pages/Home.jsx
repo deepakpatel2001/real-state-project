@@ -248,33 +248,33 @@ export const Home = () => {
                           Trusted by Leading Companies
                       </h3>
                   </div>
-                  <div className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center justify-items-center opacity-60">
-                      <div className="text-2xl font-bold text-gray-600 w-[170px] h-[170px]">
+                  <div className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center justify-items-center">
+                      <div className="text-2xl font-bold  w-[170px] h-[170px]">
                           <img
-                              src="https://design.tutsplus.com/articles/best-real-estate-agent-company-logos--cms-32521"
+                              src="https://images-platform.99static.com//r3TXD4uaDkcJ7k7K94fLBrrC7ys=/608x162:1246x800/fit-in/590x590/99designs-contests-attachments/103/103875/attachment_103875221"
                               alt="first-image"
-                              className="w-full h-full"
+                              className="w-full h-full rounded-lg"
                           />
                       </div>
-                      <div className="text-2xl font-bold text-gray-600 w-[170px] h-[170px]">
+                      <div className="text-2xl font-bold  w-[170px] h-[170px]">
                           <img
-                              src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.freepik.com%2Fpremium-vector%2Flogo-design-real-estate-company_48177908.htm&psig=AOvVaw1FJk7izXv3tGf_SMBbHFC5&ust=1751125697289000&source=images&cd=vfe&opi=89978449&ved=2ahUKEwiZ_LXa-ZGOAxXUSGwGHRp4D3cQjRx6BAgAEBk"
-                              alt="second-image"
-                              className="w-full h-full"
+                              src="https://images-platform.99static.com//r3TXD4uaDkcJ7k7K94fLBrrC7ys=/608x162:1246x800/fit-in/590x590/99designs-contests-attachments/103/103875/attachment_103875221"
+                              alt="first-image"
+                              className="w-full h-full rounded-lg"
                           />
                       </div>
-                      <div className="text-2xl font-bold text-gray-600 w-[170px] h-[170px]">
+                      <div className="text-2xl font-bold  w-[170px] h-[170px]">
                           <img
-                              src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.canva.com%2Flogos%2Ftemplates%2Freal-estate%2F&psig=AOvVaw0y7_we0yR0r80aFc_oIrh3&ust=1751125783519000&source=images&cd=vfe&opi=89978449&ved=2ahUKEwiJgMWD-pGOAxXSbmwGHS1cCkAQjRx6BAgAEBk"
-                              alt="third-image"
-                              className="w-full h-full"
+                              src="https://images-platform.99static.com//r3TXD4uaDkcJ7k7K94fLBrrC7ys=/608x162:1246x800/fit-in/590x590/99designs-contests-attachments/103/103875/attachment_103875221"
+                              alt="first-image"
+                              className="w-full h-full rounded-lg"
                           />
                       </div>
-                      <div className="text-2xl font-bold text-gray-600 w-[170px] h-[170px]">
+                      <div className="text-2xl font-bold  w-[170px] h-[170px]">
                           <img
-                              src="https://www.google.com/url?sa=i&url=https%3A%2F%2F99designs.com%2Finspiration%2Flogos%2Freal-estate&psig=AOvVaw3UP6fRMOLx0LHyKcSgKtWX&ust=1751125830233000&source=images&cd=vfe&opi=89978449&ved=2ahUKEwjal-iZ-pGOAxWzTmwGHWRGEOoQjRx6BAgAEBk"
-                              alt="fourth-image"
-                              className="w-full h-full"
+                              src="https://images-platform.99static.com//r3TXD4uaDkcJ7k7K94fLBrrC7ys=/608x162:1246x800/fit-in/590x590/99designs-contests-attachments/103/103875/attachment_103875221"
+                              alt="first-image"
+                              className="w-full h-full rounded-lg"
                           />
                       </div>
                   </div>

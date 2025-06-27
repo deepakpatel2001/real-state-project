@@ -23,3 +23,7 @@
     transform: scale(1.1);
     box-shadow: 0 10px 25px rgba(37, 211, 102, 0.4);
   }
+
+  html{
+    overflow-x: hidden;
+  }
