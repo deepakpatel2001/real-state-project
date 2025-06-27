@@ -101,154 +101,213 @@ export const Home = () => {
   ];
 
   return (
-    <div className="min-h-screen">
-      {/* Hero Carousel */}
-      <HeroCarousel />
+      <div className="min-h-screen">
+          {/* Hero Carousel */}
+          <HeroCarousel />
 
-      {/* Stats Section with Animated Counters */}
-      <section ref={statsRef} className="py-20 bg-blue-800 text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-            <div className="stat-item">
-              <div className="mb-2">
-                <AnimatedCounter end={500} suffix="+" />
-              </div>
-              <div className="text-lg">Properties Sold</div>
-            </div>
-            <div className="stat-item">
-              <div className="mb-2">
-                <AnimatedCounter end={20} suffix="+" />
-              </div>
-              <div className="text-lg">Years Experience</div>
-            </div>
-            <div className="stat-item">
-              <div className="mb-2">
-                <AnimatedCounter end={1000} suffix="+" />
-              </div>
-              <div className="text-lg">Happy Clients</div>
-            </div>
-            <div className="stat-item">
-              <div className="mb-2">
-                <AnimatedCounter end={50} suffix="+" />
-              </div>
-              <div className="text-lg">Awards Won</div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Featured Properties */}
-      <section ref={featuredRef} className="py-20 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Featured Properties</h2>
-            <p className="text-xl text-gray-600">Discover our handpicked selection of premium properties</p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {featuredProperties.map((property, index) => (
-              <div key={property.id} className="property-card bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
-                <div className="relative">
-                  <img 
-                    src={property.image} 
-                    alt={property.title}
-                    className="w-full h-64 object-cover"
-                  />
-                  <div className="absolute top-4 right-4 bg-yellow-500 text-black px-3 py-1 rounded-full font-semibold">
-                    {property.price}
+          {/* Stats Section with Animated Counters */}
+          <section ref={statsRef} className="py-20 bg-blue-800 text-white">
+              <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                  <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                      <div className="stat-item">
+                          <div className="mb-2">
+                              <AnimatedCounter end={500} suffix="+" />
+                          </div>
+                          <div className="text-lg">Properties Sold</div>
+                      </div>
+                      <div className="stat-item">
+                          <div className="mb-2">
+                              <AnimatedCounter end={20} suffix="+" />
+                          </div>
+                          <div className="text-lg">Years Experience</div>
+                      </div>
+                      <div className="stat-item">
+                          <div className="mb-2">
+                              <AnimatedCounter end={1000} suffix="+" />
+                          </div>
+                          <div className="text-lg">Happy Clients</div>
+                      </div>
+                      <div className="stat-item">
+                          <div className="mb-2">
+                              <AnimatedCounter end={50} suffix="+" />
+                          </div>
+                          <div className="text-lg">Awards Won</div>
+                      </div>
                   </div>
-                </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-bold text-gray-900 mb-2">{property.title}</h3>
-                  <p className="text-gray-600 mb-4">{property.location}</p>
-                  <div className="flex justify-between text-sm text-gray-500 mb-4">
-                    <span>{property.beds} Beds</span>
-                    <span>{property.baths} Baths</span>
-                    <span>{property.area}</span>
-                  </div>
-                  <button className="w-full bg-blue-800 text-white py-2 rounded-lg hover:bg-blue-700 transition-colors">
-                    View Details
-                  </button>
-                </div>
               </div>
-            ))}
-          </div>
-        </div>
-      </section>
+          </section>
 
-      {/* Testimonials */}
-      <section ref={testimonialsRef} className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">What Our Clients Say</h2>
-            <p className="text-xl text-gray-600">Trusted by thousands of satisfied customers</p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {testimonials.map((testimonial, index) => (
-              <div key={index} className="bg-gray-50 rounded-xl p-8 shadow-lg">
-                <div className="flex items-center mb-4">
-                  {[...Array(testimonial.rating)].map((_, i) => (
-                    <Star key={i} className="h-5 w-5 text-yellow-500 fill-current" />
-                  ))}
-                </div>
-                <p className="text-gray-700 mb-6 text-lg italic">"{testimonial.content}"</p>
-                <div className="flex items-center">
-                  <img 
-                    src={testimonial.image} 
-                    alt={testimonial.name}
-                    className="w-12 h-12 rounded-full object-cover mr-4"
-                  />
-                  <div>
-                    <div className="font-semibold text-gray-900">{testimonial.name}</div>
-                    <div className="text-gray-600">{testimonial.role}</div>
+          {/* Featured Properties */}
+          <section ref={featuredRef} className="py-20 bg-gray-50">
+              <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                  <div className="text-center mb-16">
+                      <h2 className="text-4xl font-bold text-gray-900 mb-4">
+                          Featured Properties
+                      </h2>
+                      <p className="text-xl text-gray-600">
+                          Discover our handpicked selection of premium
+                          properties
+                      </p>
                   </div>
-                </div>
+
+                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                      {featuredProperties.map((property, index) => (
+                          <div
+                              key={property.id}
+                              className="property-card bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2"
+                          >
+                              <div className="relative">
+                                  <img
+                                      src={property.image}
+                                      alt={property.title}
+                                      className="w-full h-64 object-cover"
+                                  />
+                                  <div className="absolute top-4 right-4 bg-yellow-500 text-black px-3 py-1 rounded-full font-semibold">
+                                      {property.price}
+                                  </div>
+                              </div>
+                              <div className="p-6">
+                                  <h3 className="text-xl font-bold text-gray-900 mb-2">
+                                      {property.title}
+                                  </h3>
+                                  <p className="text-gray-600 mb-4">
+                                      {property.location}
+                                  </p>
+                                  <div className="flex justify-between text-sm text-gray-500 mb-4">
+                                      <span>{property.beds} Beds</span>
+                                      <span>{property.baths} Baths</span>
+                                      <span>{property.area}</span>
+                                  </div>
+                                  <button className="w-full bg-blue-800 text-white py-2 rounded-lg hover:bg-blue-700 transition-colors">
+                                      View Details
+                                  </button>
+                              </div>
+                          </div>
+                      ))}
+                  </div>
               </div>
-            ))}
-          </div>
-        </div>
-      </section>
+          </section>
 
-      {/* Trusted Companies */}
-      <section className="py-16 bg-gray-100">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h3 className="text-2xl font-bold text-gray-900 mb-4">Trusted by Leading Companies</h3>
-          </div>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center justify-items-center opacity-60">
-            <div className="text-2xl font-bold text-gray-600">COMPANY A</div>
-            <div className="text-2xl font-bold text-gray-600">COMPANY B</div>
-            <div className="text-2xl font-bold text-gray-600">COMPANY C</div>
-            <div className="text-2xl font-bold text-gray-600">COMPANY D</div>
-          </div>
-        </div>
-      </section>
+          {/* Testimonials */}
+          <section ref={testimonialsRef} className="py-20 bg-white">
+              <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                  <div className="text-center mb-16">
+                      <h2 className="text-4xl font-bold text-gray-900 mb-4">
+                          What Our Clients Say
+                      </h2>
+                      <p className="text-xl text-gray-600">
+                          Trusted by thousands of satisfied customers
+                      </p>
+                  </div>
 
-      {/* CTA Section */}
-      <section className="py-20 bg-blue-800 text-white">
-        <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-bold mb-6">Ready to Find Your Dream Home?</h2>
-          <p className="text-xl mb-8 text-blue-100">
-            Let our expert team guide you through every step of your real estate journey
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link 
-              to="/contact"
-              className="inline-flex items-center px-8 py-4 bg-yellow-500 text-black font-semibold rounded-lg hover:bg-yellow-400 transition-all duration-300"
-            >
-              Get Started Today
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </Link>
-            <a 
-              href="tel:+15551234567"
-              className="inline-flex items-center px-8 py-4 border-2 border-white text-white font-semibold rounded-lg hover:bg-white hover:text-blue-800 transition-all duration-300"
-            >
-              Call Now: (555) 123-4567
-            </a>
-          </div>
-        </div>
-      </section>
-    </div>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                      {testimonials.map((testimonial, index) => (
+                          <div
+                              key={index}
+                              className="bg-gray-50 rounded-xl p-8 shadow-lg"
+                          >
+                              <div className="flex items-center mb-4">
+                                  {[...Array(testimonial.rating)].map(
+                                      (_, i) => (
+                                          <Star
+                                              key={i}
+                                              className="h-5 w-5 text-yellow-500 fill-current"
+                                          />
+                                      )
+                                  )}
+                              </div>
+                              <p className="text-gray-700 mb-6 text-lg italic">
+                                  "{testimonial.content}"
+                              </p>
+                              <div className="flex items-center">
+                                  <img
+                                      src={testimonial.image}
+                                      alt={testimonial.name}
+                                      className="w-12 h-12 rounded-full object-cover mr-4"
+                                  />
+                                  <div>
+                                      <div className="font-semibold text-gray-900">
+                                          {testimonial.name}
+                                      </div>
+                                      <div className="text-gray-600">
+                                          {testimonial.role}
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      ))}
+                  </div>
+              </div>
+          </section>
+
+          {/* Trusted Companies */}
+          <section className="py-16 bg-gray-100">
+              <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                  <div className="text-center mb-12">
+                      <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                          Trusted by Leading Companies
+                      </h3>
+                  </div>
+                  <div className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center justify-items-center opacity-60">
+                      <div className="text-2xl font-bold text-gray-600 w-[170px] h-[170px]">
+                          <img
+                              src="https://design.tutsplus.com/articles/best-real-estate-agent-company-logos--cms-32521"
+                              alt="first-image"
+                              className="w-full h-full"
+                          />
+                      </div>
+                      <div className="text-2xl font-bold text-gray-600 w-[170px] h-[170px]">
+                          <img
+                              src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.freepik.com%2Fpremium-vector%2Flogo-design-real-estate-company_48177908.htm&psig=AOvVaw1FJk7izXv3tGf_SMBbHFC5&ust=1751125697289000&source=images&cd=vfe&opi=89978449&ved=2ahUKEwiZ_LXa-ZGOAxXUSGwGHRp4D3cQjRx6BAgAEBk"
+                              alt="second-image"
+                              className="w-full h-full"
+                          />
+                      </div>
+                      <div className="text-2xl font-bold text-gray-600 w-[170px] h-[170px]">
+                          <img
+                              src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.canva.com%2Flogos%2Ftemplates%2Freal-estate%2F&psig=AOvVaw0y7_we0yR0r80aFc_oIrh3&ust=1751125783519000&source=images&cd=vfe&opi=89978449&ved=2ahUKEwiJgMWD-pGOAxXSbmwGHS1cCkAQjRx6BAgAEBk"
+                              alt="third-image"
+                              className="w-full h-full"
+                          />
+                      </div>
+                      <div className="text-2xl font-bold text-gray-600 w-[170px] h-[170px]">
+                          <img
+                              src="https://www.google.com/url?sa=i&url=https%3A%2F%2F99designs.com%2Finspiration%2Flogos%2Freal-estate&psig=AOvVaw3UP6fRMOLx0LHyKcSgKtWX&ust=1751125830233000&source=images&cd=vfe&opi=89978449&ved=2ahUKEwjal-iZ-pGOAxWzTmwGHWRGEOoQjRx6BAgAEBk"
+                              alt="fourth-image"
+                              className="w-full h-full"
+                          />
+                      </div>
+                  </div>
+              </div>
+          </section>
+
+          {/* CTA Section */}
+          <section className="py-20 bg-blue-800 text-white">
+              <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
+                  <h2 className="text-4xl font-bold mb-6">
+                      Ready to Find Your Dream Home?
+                  </h2>
+                  <p className="text-xl mb-8 text-blue-100">
+                      Let our expert team guide you through every step of your
+                      real estate journey
+                  </p>
+                  <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                      <Link
+                          to="/contact"
+                          className="inline-flex items-center px-8 py-4 bg-yellow-500 text-black font-semibold rounded-lg hover:bg-yellow-400 transition-all duration-300"
+                      >
+                          Get Started Today
+                          <ArrowRight className="ml-2 h-5 w-5" />
+                      </Link>
+                      <a
+                          href="tel:+15551234567"
+                          className="inline-flex items-center px-8 py-4 border-2 border-white text-white font-semibold rounded-lg hover:bg-white hover:text-blue-800 transition-all duration-300"
+                      >
+                          Call Now: (555) 123-4567
+                      </a>
+                  </div>
+              </div>
+          </section>
+      </div>
   );
 };
